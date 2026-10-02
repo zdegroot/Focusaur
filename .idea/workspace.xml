@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="79b724ac-125c-411f-8ebc-28062a20902c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FocusaurBasicDesign.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FocusaurBasicDesign.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScroll.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScroll.cs.meta" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;aidavidson&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zdegroot/Focusaur.git&quot;,
+    &quot;accountId&quot;: &quot;6b17d44f-dd19-44bc-88e5-362d7c77c2f1&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameScroll.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewMonoBehaviourScript.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.9680829512649947" />
+      <entry key="MS500" value="4.896545832579649" />
+      <entry key="S2" value="7.763172954342951" />
+      <entry key="S5" value="12.489916643307327" />
+      <entry key="S10" value="17.94903876129636" />
+      <entry key="S30" value="30.049814608135847" />
+      <entry key="S60" value="39.83996305957452" />
+      <entry key="M2" value="48.27741854689672" />
+      <entry key="M5" value="55.258471404544125" />
+      <entry key="M10" value="58.0062395594228" />
+      <entry key="M15" value="58.97565559168558" />
+      <entry key="M30" value="59.97444626063031" />
+      <entry key="H1" value="60.7253119742127" />
+      <entry key="H2" value="64.22143709880496" />
+      <entry key="H4" value="74.06237199631967" />
+      <entry key="D1" value="101.02137857682159" />
+      <entry key="W1" value="109.435597747141" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="4.406221078898994E-62" />
+      <entry key="MS500" value="5.355663186469343E-13" />
+      <entry key="S2" value="8.554671045577398E-4" />
+      <entry key="S5" value="0.059276332528602" />
+      <entry key="S10" value="0.243467313059889" />
+      <entry key="S30" value="0.6244249114771782" />
+      <entry key="S60" value="0.7902056134179117" />
+      <entry key="M2" value="0.8889351007907785" />
+      <entry key="M5" value="0.9539992254349381" />
+      <entry key="M10" value="0.9767288392562898" />
+      <entry key="M15" value="0.9844250900337606" />
+      <entry key="M30" value="0.9921819843323908" />
+      <entry key="H1" value="0.9960833219828508" />
+      <entry key="H2" value="0.9980397396811665" />
+      <entry key="H4" value="0.9990193890416572" />
+      <entry key="D1" value="0.9998364980226027" />
+      <entry key="W1" value="0.9999766409377845" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.8420172544416475" />
+      <entry key="MS500" value="4.410251268347623" />
+      <entry key="S2" value="7.251561183697277" />
+      <entry key="S5" value="12.09745801863491" />
+      <entry key="S10" value="17.798097747727656" />
+      <entry key="S30" value="30.402563236951572" />
+      <entry key="S60" value="40.44074145096628" />
+      <entry key="M2" value="49.049838171675475" />
+      <entry key="M5" value="56.158913309889336" />
+      <entry key="M10" value="58.954848457782454" />
+      <entry key="M15" value="59.941020735472826" />
+      <entry key="M30" value="60.95693749741241" />
+      <entry key="H1" value="61.71649682179054" />
+      <entry key="H2" value="65.21693534997294" />
+      <entry key="H4" value="75.05999503642185" />
+      <entry key="D1" value="102.02092524572221" />
+      <entry key="W1" value="110.43553043924264" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JqMgV7ZT8we2foetsHbsKMPfjf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Aiden&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79b724ac-125c-411f-8ebc-28062a20902c" name="Changes" comment="" />
+      <created>1790384258949</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790384258949</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityProjectDiscoverer">
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="created the basic design for focusaur app and tried implementing scrolling function to the different pages" />
+    <MESSAGE value="fixing touch screen test 1" />
+    <MESSAGE value="pushing now" />
+    <MESSAGE value="turned the screens into canvas images" />
+    <option name="LAST_COMMIT_MESSAGE" value="turned the screens into canvas images" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
