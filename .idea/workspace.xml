@@ -12,6 +12,9 @@
   <component name="ChangeListManager">
     <list default="true" id="79b724ac-125c-411f-8ebc-28062a20902c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FocusaurBasicDesign.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FocusaurBasicDesign.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScroll.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameScroll.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +43,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameScroll.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewMonoBehaviourScript.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -48,61 +52,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0005247840892904" />
-      <entry key="MS500" value="1.4188113953791386" />
-      <entry key="S2" value="2.7998596667539877" />
-      <entry key="S5" value="3.441683137668998" />
-      <entry key="S10" value="3.7057738717425286" />
-      <entry key="S30" value="3.8990011794966386" />
-      <entry key="S60" value="4.117301634354018" />
-      <entry key="M2" value="6.74708377963468" />
-      <entry key="M5" value="18.930512374285957" />
-      <entry key="M10" value="30.20629398860628" />
-      <entry key="M15" value="35.61181066981982" />
-      <entry key="M30" value="42.13285104074511" />
-      <entry key="H1" value="45.88199291111002" />
-      <entry key="H2" value="47.892696942511854" />
-      <entry key="H4" value="48.933988267344816" />
-      <entry key="D1" value="49.82058991554612" />
-      <entry key="W1" value="49.97432701314463" />
+      <entry key="MS100" value="1.9680829512649947" />
+      <entry key="MS500" value="4.896545832579649" />
+      <entry key="S2" value="7.763172954342951" />
+      <entry key="S5" value="12.489916643307327" />
+      <entry key="S10" value="17.94903876129636" />
+      <entry key="S30" value="30.049814608135847" />
+      <entry key="S60" value="39.83996305957452" />
+      <entry key="M2" value="48.27741854689672" />
+      <entry key="M5" value="55.258471404544125" />
+      <entry key="M10" value="58.0062395594228" />
+      <entry key="M15" value="58.97565559168558" />
+      <entry key="M30" value="59.97444626063031" />
+      <entry key="H1" value="60.7253119742127" />
+      <entry key="H2" value="64.22143709880496" />
+      <entry key="H4" value="74.06237199631967" />
+      <entry key="D1" value="101.02137857682159" />
+      <entry key="W1" value="109.435597747141" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="MS100" value="4.406221078898994E-62" />
+      <entry key="MS500" value="5.355663186469343E-13" />
+      <entry key="S2" value="8.554671045577398E-4" />
+      <entry key="S5" value="0.059276332528602" />
+      <entry key="S10" value="0.243467313059889" />
+      <entry key="S30" value="0.6244249114771782" />
+      <entry key="S60" value="0.7902056134179117" />
+      <entry key="M2" value="0.8889351007907785" />
+      <entry key="M5" value="0.9539992254349381" />
+      <entry key="M10" value="0.9767288392562898" />
+      <entry key="M15" value="0.9844250900337606" />
+      <entry key="M30" value="0.9921819843323908" />
+      <entry key="H1" value="0.9960833219828508" />
+      <entry key="H2" value="0.9980397396811665" />
+      <entry key="H4" value="0.9990193890416572" />
+      <entry key="D1" value="0.9998364980226027" />
+      <entry key="W1" value="0.9999766409377845" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9731648472851598" />
-      <entry key="MS500" value="1.4104108580671235" />
-      <entry key="S2" value="2.7952079685962357" />
-      <entry key="S5" value="3.439336530077379" />
-      <entry key="S10" value="3.7044999845216866" />
-      <entry key="S30" value="3.8985465491726154" />
-      <entry key="S60" value="4.116429434796744" />
-      <entry key="M2" value="6.742025006946334" />
-      <entry key="M5" value="18.920282260751986" />
-      <entry key="M10" value="30.197476932980173" />
-      <entry key="M15" value="35.604761363542394" />
-      <entry key="M30" value="42.12862373240719" />
-      <entry key="H1" value="45.87967808373272" />
-      <entry key="H2" value="47.89148569352396" />
-      <entry key="H4" value="48.933368717251184" />
-      <entry key="D1" value="49.82048468230057" />
-      <entry key="W1" value="49.974311930919136" />
+      <entry key="MS100" value="1.8420172544416475" />
+      <entry key="MS500" value="4.410251268347623" />
+      <entry key="S2" value="7.251561183697277" />
+      <entry key="S5" value="12.09745801863491" />
+      <entry key="S10" value="17.798097747727656" />
+      <entry key="S30" value="30.402563236951572" />
+      <entry key="S60" value="40.44074145096628" />
+      <entry key="M2" value="49.049838171675475" />
+      <entry key="M5" value="56.158913309889336" />
+      <entry key="M10" value="58.954848457782454" />
+      <entry key="M15" value="59.941020735472826" />
+      <entry key="M30" value="60.95693749741241" />
+      <entry key="H1" value="61.71649682179054" />
+      <entry key="H2" value="65.21693534997294" />
+      <entry key="H4" value="75.05999503642185" />
+      <entry key="D1" value="102.02092524572221" />
+      <entry key="W1" value="110.43553043924264" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -159,7 +163,8 @@
     <MESSAGE value="created the basic design for focusaur app and tried implementing scrolling function to the different pages" />
     <MESSAGE value="fixing touch screen test 1" />
     <MESSAGE value="pushing now" />
-    <option name="LAST_COMMIT_MESSAGE" value="pushing now" />
+    <MESSAGE value="turned the screens into canvas images" />
+    <option name="LAST_COMMIT_MESSAGE" value="turned the screens into canvas images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
