@@ -13,6 +13,9 @@ public class SwipeNavigator : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     [Tooltip("How fast the view slides into place.")]
     [SerializeField] private float snapSpeed = 12f;
 
+    [Tooltip("Which page to open on (0 = first page in Content).")]
+    [SerializeField] private int startPage = 2;
+
     [Tooltip("How far (in fraction of a screen) you must drag to change page.")]
     [SerializeField, Range(0.05f, 0.5f)] private float swipeThreshold = 0.15f;
 
@@ -30,10 +33,15 @@ public class SwipeNavigator : MonoBehaviour, IBeginDragHandler, IEndDragHandler
         scrollRect = GetComponent<ScrollRect>();
     }
 
-    private void Start()
+    private System.Collections.IEnumerator Start()
     {
         pageCount = scrollRect.content.childCount;
-        SnapInstantly(0);
+
+        // Wait a frame so the layout (page sizes / content width) is calculated
+        // before we jump to the start page.
+        yield return null;
+        Canvas.ForceUpdateCanvases();
+        SnapInstantly(startPage);
     }
 
     private void Update()
