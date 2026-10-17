@@ -2534,6 +2534,7 @@ GameObject:
   - component: {fileID: 1534611086}
   - component: {fileID: 1534611085}
   - component: {fileID: 1534611084}
+  - component: {fileID: 1534611088}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2632,6 +2633,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1534611088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534611083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2a6697da4ad462d93779c6b94acc57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CosmeticScript
+  canvas: {fileID: 1534611086}
+  CosmeticImages:
+  - {fileID: 2115456219}
+  - {fileID: 1631854767}
+  - {fileID: 1278652834}
+  - {fileID: 873969164}
+  - {fileID: 691311609}
+  - {fileID: 1395050547}
 --- !u!1 &1548941325
 GameObject:
   m_ObjectHideFlags: 0
@@ -3522,7 +3543,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2097778734}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2097778734
 MonoBehaviour:
   m_ObjectHideFlags: 0
