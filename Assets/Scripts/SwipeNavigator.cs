@@ -10,7 +10,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(ScrollRect))]
 public class SwipeNavigator : MonoBehaviour, IBeginDragHandler, IEndDragHandler
 {
-    [Tooltip("How fast the view slides into place.")]
+    
     [SerializeField] private float snapSpeed = 12f;
 
     [Tooltip("Which page to open on (0 = first page in Content).")]
