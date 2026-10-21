@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class CosmeticItem
 {
@@ -61,6 +63,8 @@ public class CosmeticScript : MonoBehaviour
 
     private int unboughtCount;           // items [0, unboughtCount) are unbought
     private List<int> shownIndexes = new List<int>();
+    private int day;
+    private int prevDay;
 
     [System.NonSerialized]
     public List<CosmeticItem> CosmeticItems;
@@ -99,8 +103,18 @@ public class CosmeticScript : MonoBehaviour
 	
     void Start()
     {
-        unboughtCount = CosmeticItems.Count;
+	    day = prevDay = DateTime.Now.Day;
         RefreshShop();
+    }
+
+    void Update()
+    {
+	    day = DateTime.Now.Day;
+	    if (day != prevDay)
+	    {
+		    RefreshShop();
+		    prevDay = day;
+	    }
     }
 
     public void RefreshShop()
@@ -121,25 +135,18 @@ public class CosmeticScript : MonoBehaviour
     public void BuySlot(int slot)
     {
         if (slot >= shownIndexes.Count) return;
-
-        int index = shownIndexes[slot];
-        if (CosmeticItems[index].Price > PlayerStuff.Leaves) return;   // can't afford it
-
-        CosmeticItems[index].buyCosmetic();
-
-        // move the bought item into the "bought" section at the end
-        int last = unboughtCount - 1;
-        (CosmeticItems[index], CosmeticItems[last]) = (CosmeticItems[last], CosmeticItems[index]);
-        unboughtCount--;
-
-        RefreshShop();
+        CosmeticItem item = CosmeticItems[shownIndexes[slot]];
+        if (item.Price > PlayerStuff.Leaves) return;
+        if (item.isBought()) return;
+        item.buyCosmetic();
+        CosmeticImages[slot].gameObject.SetActive(false);
     }
 
     List<int> GetUniqueRandomIndexes(int amount)
     {
         var indexes = new List<int>();
-        for (int i = 0; i < unboughtCount; i++) indexes.Add(i);   // unbought items only
-
+        for (int i = 0; i < CosmeticItems.Count; i++) indexes.Add(i); // unbought items only
+			if (!CosmeticItems[i].isBought()) indexes.Add(i);
         for (int i = indexes.Count - 1; i > 0; i--)
         {
             int j = Random.Range(0, i + 1);
