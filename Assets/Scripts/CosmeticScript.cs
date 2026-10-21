@@ -50,7 +50,7 @@ public class CosmeticScript : MonoBehaviour
     private List<int> shownIndexes = new List<int>();
     private int day;
     private int prevDay;
-
+// didn't push
     [System.NonSerialized]
     public List<CosmeticItem> CosmeticItems;
 	void Awake(){
