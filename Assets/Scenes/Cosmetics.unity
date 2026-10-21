@@ -2645,7 +2645,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b2a6697da4ad462d93779c6b94acc57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CosmeticScript
-  canvas: {fileID: 1534611086}
   CosmeticImages:
   - {fileID: 2115456219}
   - {fileID: 1631854767}
@@ -2653,6 +2652,34 @@ MonoBehaviour:
   - {fileID: 873969164}
   - {fileID: 691311609}
   - {fileID: 1395050547}
+  CosmeticSprites:
+  - {fileID: -8667466294985060184, guid: ae610b88d0e544211bc1f1d5dc7de489, type: 3}
+  - {fileID: 7141765067525904753, guid: 45c48b535a9284167844b9a0e43d65f4, type: 3}
+  - {fileID: 7584875828100514122, guid: 0941ff25489b346b4bb8b3a2f393d85e, type: 3}
+  - {fileID: 5933292986450474473, guid: 32c65370584f04481bb412b683680e9d, type: 3}
+  - {fileID: -2895157278119961449, guid: 6cecf53dc01844c699095d1f29bb5812, type: 3}
+  - {fileID: 285810041316537904, guid: 8f89813c9d4454a27813d6475d64485c, type: 3}
+  - {fileID: -9082789242079819192, guid: 1bc501eaecde84be3bf3ae9373377b54, type: 3}
+  - {fileID: -4656658513182322354, guid: 24a1be01bb85a4548ab8491982f01ba7, type: 3}
+  - {fileID: 1075993247170539406, guid: 6cfaa85d300e54f1fb55c36f6453b379, type: 3}
+  - {fileID: -6231044458718751821, guid: 31e9cb9d055ee4b41969b8081bb67afb, type: 3}
+  - {fileID: 6168083732550661486, guid: e50a0390019e94a0aa8bcd907ac811ba, type: 3}
+  - {fileID: -4396136994341983667, guid: f1cfb9424b07a43148b1f3372f493895, type: 3}
+  - {fileID: 5601084914263436108, guid: 5755ab4997f784440bcc616976f3345f, type: 3}
+  - {fileID: 1480917699468073914, guid: 772ef29aa384143d7a48a8286fb3f6df, type: 3}
+  - {fileID: 5827743490018412032, guid: c26f3aec8a5264e8dbd96560765b166f, type: 3}
+  - {fileID: -6082742533581839185, guid: 8ff6af73837e94efbb24a3ad5dc3d895, type: 3}
+  - {fileID: -7501201644240826356, guid: 6aaf9dd3f36af45b0b73f934954ad0a3, type: 3}
+  - {fileID: 8802559959546800957, guid: e202ed4273e014985aaf43e6d4940732, type: 3}
+  - {fileID: 1576900967005387461, guid: 5ddbf801615a148ff98f7bad4ec1dce5, type: 3}
+  - {fileID: -7216651109296135376, guid: cdee97e5ddafd432c928efdaa82fb76e, type: 3}
+  - {fileID: 6961262827992784269, guid: 9f84ef4bfc65a4ca088f677d8f9694ec, type: 3}
+  - {fileID: -6444940296795206775, guid: 229949445febb434fb8f5bd281340a5a, type: 3}
+  - {fileID: 8580352971482666360, guid: 793fbea39c95d4442b2440b07dd0866b, type: 3}
+  - {fileID: -8688392260014441854, guid: ba0642fbd2a664db1be52979e29e23b2, type: 3}
+  - {fileID: -1843197933104017171, guid: e78e201209062489ead609e11602eb34, type: 3}
+  - {fileID: 9063164701530692409, guid: a5d4fe1bf04ee494ca5e2d8f2dcd36cc, type: 3}
+  - {fileID: 2069420720813572178, guid: f2fd2cba4bc2f430f8d75b473c70a7fe, type: 3}
 --- !u!1 &1548941325
 GameObject:
   m_ObjectHideFlags: 0

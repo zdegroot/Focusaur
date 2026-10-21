@@ -8,33 +8,18 @@ public class CosmeticItem
 {
     private string name;
     private int price;
-    public string ImageTxt;
 	private Sprite cosmeticImage;
     public bool bought;
 
     public string Name => name;
     public int Price => price;
-
-    // Loads the sprite the first time it's requested (safe: happens after Unity is ready)
-    public Sprite CosmeticImage
-    {
-        get
-        {
-            if (cosmeticImage == null)
-            {
-                cosmeticImage = Resources.Load<Sprite>(ImageTxt);
-                if (cosmeticImage == null)
-                    Debug.LogWarning("Sprite not found: " + ImageTxt);
-            }
-            return cosmeticImage;
-        }
-    }
-
+    public Sprite CosmeticImage => cosmeticImage;
+    
     // Only stores strings and numbers, so it's safe to call from a field initializer
-    public CosmeticItem(string name, string ImageTxt, int price, bool bought)
+    public CosmeticItem(string name, Sprite cosmeticImage, int price, bool bought)
     {
         this.name = name;
-        this.ImageTxt = ImageTxt;
+        this.cosmeticImage = cosmeticImage;
         this.price = price;
         this.bought = bought;
     }
@@ -60,7 +45,7 @@ public class CosmeticItem
 public class CosmeticScript : MonoBehaviour
 {
     public List<Image> CosmeticImages;   // drag your 6 slot Images in the Inspector
-
+    public List<Sprite> CosmeticSprites;
     private int unboughtCount;           // items [0, unboughtCount) are unbought
     private List<int> shownIndexes = new List<int>();
     private int day;
@@ -69,35 +54,38 @@ public class CosmeticScript : MonoBehaviour
     [System.NonSerialized]
     public List<CosmeticItem> CosmeticItems;
 	void Awake(){
+		
+		Debug.Log("Sprites in list: " + CosmeticSprites.Count, this);
+		
 		CosmeticItems = new List<CosmeticItem>
     	{
-        	new CosmeticItem("Jungle Hat", "Art/ambulance", 20, false),
-        	new CosmeticItem("Winter Hat", "Art/angry", 20, false),
-        	new CosmeticItem("Summer Hat", "Art/bee", 20, false),
-        	new CosmeticItem("Sunglasses", "Art/cat", 10, false),
-        	new CosmeticItem("Rainbow Hat", "Art/circle", 20, false),
-        	new CosmeticItem("Rainbow Sunglasses", "Art/cow", 15, false),
-        	new CosmeticItem("Top Hat", "Art/cringe", 25, false),
-        	new CosmeticItem("Star Sunglasses", "Art/cry", 15, false),
-        	new CosmeticItem("Heart Glasses", "Art/dog", 15, false),
-        	new CosmeticItem("Astronaut Helmet", "Art/hate", 25, false),
-        	new CosmeticItem("Cat In the Hat Hat", "Art/hexagon", 30, false),
-        	new CosmeticItem("Sombrero", "Art/horse", 30, false),
-        	new CosmeticItem("Zach Hat", "Art/hospital", 5, false),
-        	new CosmeticItem("Naveed Hat", "Art/octogon", 1, false),
-        	new CosmeticItem("Jerry Hat", "Art/park", 5, false),
-        	new CosmeticItem("Ethan Hat", "Art/pentagon", 5, false),
-        	new CosmeticItem("Jake Hat", "Art/pizza", 5, false),
-        	new CosmeticItem("Aiden Hat", "Art/smile", 5, false),
-        	new CosmeticItem("Andy Hat", "Art/snake", 5, false),
-        	new CosmeticItem("Oscar Hat", "Art/square", 5, false),
-        	new CosmeticItem("Party Hat", "Art/suprised", 25, false),
-        	new CosmeticItem("Wizard Hat", "Art/taco", 25, false),
-       		new CosmeticItem("Baseball Hat", "Art/tree", 15, false),
-        	new CosmeticItem("Beanie", "Art/Untitled design (1)", 10, false),
-        	new CosmeticItem("Cowboy Hat", "Art/Untitled design (2)", 20, false),
-        	new CosmeticItem("Fruit Hat", "Art/Untitled design (3)", 18, false),
-        	new CosmeticItem("Golden Crown", "Art/Untitled design", 2000, false)
+        	new CosmeticItem("Jungle Hat", CosmeticSprites[0], 20, false),
+        	new CosmeticItem("Winter Hat", CosmeticSprites[1], 20, false),
+        	new CosmeticItem("Summer Hat", CosmeticSprites[2], 20, false),
+        	new CosmeticItem("Sunglasses", CosmeticSprites[3], 10, false),
+        	new CosmeticItem("Rainbow Hat", CosmeticSprites[4], 20, false),
+        	new CosmeticItem("Rainbow Sunglasses", CosmeticSprites[5], 15, false),
+        	new CosmeticItem("Top Hat", CosmeticSprites[6], 25, false),
+        	new CosmeticItem("Star Sunglasses", CosmeticSprites[7], 15, false),
+        	new CosmeticItem("Heart Glasses", CosmeticSprites[8], 15, false),
+        	new CosmeticItem("Astronaut Helmet", CosmeticSprites[9], 25, false),
+        	new CosmeticItem("Cat In the Hat Hat", CosmeticSprites[10], 30, false),
+        	new CosmeticItem("Sombrero", CosmeticSprites[11], 30, false),
+        	new CosmeticItem("Zach Hat", CosmeticSprites[12], 5, false),
+        	new CosmeticItem("Naveed Hat", CosmeticSprites[13], 1, false),
+        	new CosmeticItem("Jerry Hat", CosmeticSprites[14], 5, false),
+        	new CosmeticItem("Ethan Hat", CosmeticSprites[15], 5, false),
+        	new CosmeticItem("Jake Hat", CosmeticSprites[16], 5, false),
+        	new CosmeticItem("Aiden Hat", CosmeticSprites[17], 5, false),
+        	new CosmeticItem("Andy Hat", CosmeticSprites[18], 5, false),
+        	new CosmeticItem("Oscar Hat", CosmeticSprites[19], 5, false),
+        	new CosmeticItem("Party Hat", CosmeticSprites[20], 25, false),
+        	new CosmeticItem("Wizard Hat", CosmeticSprites[21], 25, false),
+       		new CosmeticItem("Baseball Hat", CosmeticSprites[22], 15, false),
+        	new CosmeticItem("Beanie", CosmeticSprites[23], 10, false),
+        	new CosmeticItem("Cowboy Hat", CosmeticSprites[24], 20, false),
+        	new CosmeticItem("Fruit Hat", CosmeticSprites[25], 18, false),
+        	new CosmeticItem("Golden Crown", CosmeticSprites[26], 2000, false)
     	};
 	}
 	
@@ -145,8 +133,15 @@ public class CosmeticScript : MonoBehaviour
     List<int> GetUniqueRandomIndexes(int amount)
     {
         var indexes = new List<int>();
-        for (int i = 0; i < CosmeticItems.Count; i++) indexes.Add(i); // unbought items only
-			if (!CosmeticItems[i].isBought()) indexes.Add(i);
+        for (int i = 0; i < CosmeticItems.Count; i++) 
+        {
+	        // unbought items only
+	        if (!CosmeticItems[i].isBought())
+	        {
+		        indexes.Add(i);
+	        }
+        } 
+			
         for (int i = indexes.Count - 1; i > 0; i--)
         {
             int j = Random.Range(0, i + 1);
