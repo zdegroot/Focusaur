@@ -6,7 +6,6 @@ using UnityEngine;
 /// </summary>
 public class CloudDrift : MonoBehaviour
 {
-    [Tooltip("Pixels per second. Use a smaller number for 'far away' clouds.")]
     [SerializeField] private float speed = 20f;
 
     private RectTransform rt;
