@@ -1,45 +1,55 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
+
+[System.Serializable]
+public struct TaskData
+{
+    public string taskName;
+    public int rewardCurrency; // Amount of currency awarded upon completion
+    public bool isCompleted;
+}
 
 public class TaskItem : MonoBehaviour
 {
     [Header("UI References")]
-    public Text titleText;
-    public Toggle completionToggle;
+    [SerializeField] private Text titleText;
+    [SerializeField] private Toggle completionToggle;
 
-    [Header("Task State")]
-    public string taskName;
-    public bool isCompleted;
+    [Header("Runtime State")]
+    private TaskData currentData;
 
-    // Called when the task item is instantiated
-    public void Initialize(string name)
+    public TaskData Data => currentData; // Read-only access to task properties
+
+    public void Initialize(TaskData data)
     {
-        taskName = name;
-        isCompleted = false;
-        UpdateUI();
+        currentData = data;
+        
+        // Display formatted title with currency preview
+        titleText.text = $"{currentData.taskName} (+{currentData.rewardCurrency} Gold)";
+        titleText.supportRichText = true;
+
+        completionToggle.isOn = currentData.isCompleted;
+
+        completionToggle.onValueChanged.RemoveAllListeners();
+        completionToggle.onValueChanged.AddListener(OnToggleChanged);
     }
 
-    // Toggle completed status programmatically or via UI
-    public void SetCompleted(bool completed)
+    private void OnToggleChanged(bool isChecked)
     {
-        isCompleted = completed;
-        UpdateUI();
-    }
+        currentData.isCompleted = isChecked;
 
-    private void UpdateUI()
-    {
-        if (titleText == null) return;
-
-        // Apply Rich Text strikethrough and gray text when completed
-        if (isCompleted)
+        if (isChecked)
         {
-            titleText.text = $"<s>{taskName}</s>";
-            titleText.color = Color.gray;
+            titleText.text = $"<s>{currentData.taskName} (+{currentData.rewardCurrency} Gold)</s>";
+            
+            // TODO: Call your Currency / Economy Manager here!
         }
         else
         {
-            titleText.text = taskName;
-            titleText.color = Color.black;
+            titleText.text = $"{currentData.taskName} (+{currentData.rewardCurrency} Gold)";
+            
+            // TODO: Deduct currency if unchecked (optional)
         }
     }
 }
