@@ -15,7 +15,6 @@ public class CosmeticItem
     public string Name => name;
     public int Price => price;
     public Sprite CosmeticImage => cosmeticImage;
-	[SerializeField] public TMP_Text CosmeticText;
     
     // Only stores strings and numbers, so it's safe to call from a field initializer
     public CosmeticItem(string name, Sprite cosmeticImage, int price, bool bought)
@@ -24,7 +23,6 @@ public class CosmeticItem
         this.cosmeticImage = cosmeticImage;
         this.price = price;
         this.bought = bought;
-		CosmeticText.text = name;
     }
 	public string getName(){
 		return name;
@@ -64,7 +62,7 @@ public class CosmeticScript : MonoBehaviour
     public List<CosmeticItem> CosmeticItems;
 	void Awake(){
 		
-		Debug.Log("Sprites in list: " + CosmeticSprites.Count, this);
+		Debug.Log("Sprites in The list: " + CosmeticSprites.Count, this);
 		
 		CosmeticItems = new List<CosmeticItem>
     	{
@@ -97,40 +95,6 @@ public class CosmeticScript : MonoBehaviour
         	new CosmeticItem("Golden Crown", CosmeticSprites[26], 2000, false)
     	};
 	}
-	public string concatTxt(string name, int price){
-		return name + price.ToString();
-	}
-
-	public List<string> CosmeticTexts = new List<string>{
-		concat(CosmeticItems[0].getName(),CosmeticItems[0].getPrice()),
-		concat(CosmeticItems[1].getName(),CosmeticItems[1].getPrice()),
-		concat(CosmeticItems[2].getName(),CosmeticItems[2].getPrice()),
-		concat(CosmeticItems[3].getName(),CosmeticItems[3].getPrice()),
-		concat(CosmeticItems[4].getName(),CosmeticItems[4].getPrice()),
-		concat(CosmeticItems[5].getName(),CosmeticItems[5].getPrice()),
-		concat(CosmeticItems[6].getName(),CosmeticItems[6].getPrice()),
-		concat(CosmeticItems[7].getName(),CosmeticItems[7].getPrice()),
-		concat(CosmeticItems[8].getName(),CosmeticItems[8].getPrice()),
-		concat(CosmeticItems[9].getName(),CosmeticItems[9].getPrice()),
-		concat(CosmeticItems[10].getName(),CosmeticItems[10].getPrice()),
-		concat(CosmeticItems[11].getName(),CosmeticItems[11].getPrice()),
-		concat(CosmeticItems[12].getName(),CosmeticItems[12].getPrice()),
-		concat(CosmeticItems[13].getName(),CosmeticItems[13].getPrice()),
-		concat(CosmeticItems[14].getName(),CosmeticItems[14].getPrice()),
-		concat(CosmeticItems[15].getName(),CosmeticItems[15].getPrice()),
-		concat(CosmeticItems[16].getName(),CosmeticItems[16].getPrice()),
-		concat(CosmeticItems[17].getName(),CosmeticItems[17].getPrice()),
-		concat(CosmeticItems[18].getName(),CosmeticItems[18].getPrice()),
-		concat(CosmeticItems[19].getName(),CosmeticItems[19].getPrice()),
-		concat(CosmeticItems[20].getName(),CosmeticItems[20].getPrice()),
-		concat(CosmeticItems[21].getName(),CosmeticItems[21].getPrice()),
-		concat(CosmeticItems[22].getName(),CosmeticItems[22].getPrice()),
-		concat(CosmeticItems[23].getName(),CosmeticItems[23].getPrice()),
-		concat(CosmeticItems[24].getName(),CosmeticItems[24].getPrice()),
-		concat(CosmeticItems[25].getName(),CosmeticItems[25].getPrice()),
-		concat(CosmeticItems[26].getName(),CosmeticItems[26].getPrice())
-    };
-	
 	
     void Start()
     {
@@ -158,8 +122,13 @@ public class CosmeticScript : MonoBehaviour
             CosmeticImages[i].gameObject.SetActive(hasItem);
 
             if (hasItem)
-                CosmeticImages[i].sprite = CosmeticItems[shownIndexes[i]].CosmeticImage;
-                CosmeticText[i].text = CosmeticTexts[shownIndexes[i]];
+			{
+				CosmeticItem item = CosmeticItems[shownIndexes[i]];
+				CosmeticImages[i].sprite = item.CosmeticImage;
+				if(i < CosmeticText.Count && CosmeticText[i] != null){
+					CosmeticText[i].text = item.Name + " - " + item.Price;
+				}
+			}
         }
     }
 
