@@ -46,6 +46,7 @@ public class TaskItem : MonoBehaviour
             
             // TODO: Call your Currency / Economy Manager here!
             importedPlayer.addLeaves(currentData.rewardCurrency);
+            importedPlayer.questCompleted();
         }
         else
         {
@@ -53,6 +54,7 @@ public class TaskItem : MonoBehaviour
             
             // TODO: Deduct currency if unchecked (optional)
             importedPlayer.removeLeaves(currentData.rewardCurrency);
+            importedPlayer.questRecinded();
         }
     }
 }
