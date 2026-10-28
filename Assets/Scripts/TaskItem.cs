@@ -15,16 +15,17 @@ public class TaskItem : MonoBehaviour
     [Header("UI References")]
     [SerializeField] private Text titleText;
     [SerializeField] private Toggle completionToggle;
-
+    private PlayerVariables importedPlayer;
     [Header("Runtime State")]
     private TaskData currentData;
 
+    
     public TaskData Data => currentData; // Read-only access to task properties
 
-    public void Initialize(TaskData data)
+    public void Initialize(TaskData data, PlayerVariables Player)
     {
         currentData = data;
-        
+        importedPlayer = Player;
         // Display formatted title with currency preview
         titleText.text = $"{currentData.taskName} (+{currentData.rewardCurrency} Gold)";
         titleText.supportRichText = true;
@@ -44,14 +45,14 @@ public class TaskItem : MonoBehaviour
             titleText.text = $"<s>{currentData.taskName} (+{currentData.rewardCurrency} Gold)</s>";
             
             // TODO: Call your Currency / Economy Manager here!
-            PlayerStuff.Leaves += currentData.rewardCurrency;
+            importedPlayer.addLeaves(currentData.rewardCurrency);
         }
         else
         {
             titleText.text = $"{currentData.taskName} (+{currentData.rewardCurrency} Gold)";
             
             // TODO: Deduct currency if unchecked (optional)
-            PlayerStuff.Leaves -= currentData.rewardCurrency;
+            importedPlayer.removeLeaves(currentData.rewardCurrency);
         }
     }
 }

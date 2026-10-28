@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 public class BuyingItems : MonoBehaviour
 {
+    public PlayerVariables Player;
     private int[] buttons = new int[6];
     private bool[] buttonPressed = new bool[6];
     public Button[] buttonsUI = new Button[6];
@@ -30,9 +31,9 @@ public class BuyingItems : MonoBehaviour
     {
         if (buttons[0] == 1 && buttonPressed[0] == false)
         {
-            if (PlayerStuff.Leaves >= cosmeticScript.GetItemInSlot(0).getPrice())
+            if (Player.getLeaves() >= cosmeticScript.GetItemInSlot(0).getPrice())
             {
-                PlayerStuff.Leaves -= cosmeticScript.GetItemInSlot(0).getPrice();
+                Player.removeLeaves(cosmeticScript.GetItemInSlot(0).getPrice()); 
                 ModButton(0);
 
             }
@@ -41,18 +42,18 @@ public class BuyingItems : MonoBehaviour
         }
         if (buttons[1] == 1  && buttonPressed[1] == false)
         {
-            if (PlayerStuff.Leaves >= cosmeticScript.GetItemInSlot(1).getPrice())
+            if (Player.getLeaves() >= cosmeticScript.GetItemInSlot(1).getPrice())
             {
-                PlayerStuff.Leaves -= cosmeticScript.GetItemInSlot(1).getPrice();
+                Player.removeLeaves(cosmeticScript.GetItemInSlot(1).getPrice()); 
                 ModButton(1);
             }
             buttonPressed[1] = true;
         }
         if (buttons[2] == 1  && buttonPressed[2] == false)
         {
-            if (PlayerStuff.Leaves >= cosmeticScript.GetItemInSlot(2).getPrice())
+            if (Player.getLeaves() >= cosmeticScript.GetItemInSlot(2).getPrice())
             {
-                PlayerStuff.Leaves -= cosmeticScript.GetItemInSlot(2).getPrice();
+                Player.removeLeaves(cosmeticScript.GetItemInSlot(2).getPrice()); 
                 ModButton(2);
 
             }
@@ -60,9 +61,9 @@ public class BuyingItems : MonoBehaviour
         }
         if (buttons[3] == 1  && buttonPressed[3] == false)
         {
-            if (PlayerStuff.Leaves >= cosmeticScript.GetItemInSlot(3).getPrice())
+            if (Player.getLeaves() >= cosmeticScript.GetItemInSlot(3).getPrice())
             {
-                PlayerStuff.Leaves -= cosmeticScript.GetItemInSlot(3).getPrice();
+                Player.removeLeaves(cosmeticScript.GetItemInSlot(3).getPrice()); 
                 ModButton(3);
 
             }
@@ -70,18 +71,18 @@ public class BuyingItems : MonoBehaviour
         }
         if (buttons[4] == 1  && buttonPressed[4] == false)
         {
-            if (PlayerStuff.Leaves >= cosmeticScript.GetItemInSlot(4).getPrice())
+            if (Player.getLeaves() >= cosmeticScript.GetItemInSlot(4).getPrice())
             {
-                PlayerStuff.Leaves -= cosmeticScript.GetItemInSlot(4).getPrice();
+                Player.removeLeaves(cosmeticScript.GetItemInSlot(4).getPrice()); 
                 ModButton(4);
             }
             buttonPressed[4] = true;
         }
         if (buttons[5] == 1  && buttonPressed[5] == false)
         {
-            if (PlayerStuff.Leaves >= cosmeticScript.GetItemInSlot(5).getPrice())
+            if (Player.getLeaves() >= cosmeticScript.GetItemInSlot(5).getPrice())
             {
-                PlayerStuff.Leaves -= cosmeticScript.GetItemInSlot(5).getPrice();
+                Player.removeLeaves(cosmeticScript.GetItemInSlot(5).getPrice()); 
                 ModButton(5);
             }
             buttonPressed[5] = true;

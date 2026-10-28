@@ -8,7 +8,7 @@ public class TaskListManager : MonoBehaviour
     [Header("UI References")]
     [SerializeField] private GameObject taskItemPrefab;
     [SerializeField] private Transform taskListContainer;
-
+    [SerializeField] private PlayerVariables Player;
     [Header("Preset Task Data Pool")]
     [SerializeField] private List<TaskData> presetTaskPool = new List<TaskData>
     {
@@ -42,7 +42,7 @@ public class TaskListManager : MonoBehaviour
         
         if (itemComponent != null)
         {
-            itemComponent.Initialize(randomTask);
+            itemComponent.Initialize(randomTask, Player);
         }
     }
 }

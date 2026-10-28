@@ -30,16 +30,16 @@ public class CosmeticItem
 	public int getPrice(){
 		return price;
 	}
-    public void buyCosmetic()
+    public void buyCosmetic(PlayerVariables Player)
     {
         bought = true;
-        PlayerStuff.Leaves -= price;
+        Player.removeLeaves(price);
     }
 
-    public void sellCosmetic()
+    public void sellCosmetic(PlayerVariables Player)
     {
         bought = false;
-        PlayerStuff.Leaves += price;
+        Player.addLeaves(price);
     }
 
     public bool isBought()
@@ -50,6 +50,7 @@ public class CosmeticItem
 
 public class CosmeticScript : MonoBehaviour
 {
+	
     public List<Image> CosmeticImages;   // drag your 6 slot Images in the Inspector
     public List<Sprite> CosmeticSprites;
 	public List<TMP_Text> CosmeticText;
@@ -57,6 +58,7 @@ public class CosmeticScript : MonoBehaviour
     private List<int> shownIndexes = new List<int>();
     private int day;
     private int prevDay;
+	public PlayerVariables Player;
     [System.NonSerialized]
     public List<CosmeticItem> CosmeticItems;
 	void Awake(){
@@ -139,9 +141,9 @@ public class CosmeticScript : MonoBehaviour
     {
         if (slot >= shownIndexes.Count) return;
         CosmeticItem item = CosmeticItems[shownIndexes[slot]];
-        if (item.Price > PlayerStuff.Leaves) return;
+        if (item.Price > Player.getLeaves()) return;
         if (item.isBought()) return;
-        item.buyCosmetic();
+        item.buyCosmetic(Player);
         CosmeticImages[slot].gameObject.SetActive(false);
     }
 
