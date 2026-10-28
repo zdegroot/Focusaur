@@ -34,6 +34,8 @@ public class CosmeticItem
     {
         bought = true;
         Player.removeLeaves(price);
+		Player.AddToInventory(this);
+		Player.readInventory();
     }
 
     public void sellCosmetic(PlayerVariables Player)
@@ -144,7 +146,7 @@ public class CosmeticScript : MonoBehaviour
         if (item.Price > Player.getLeaves()) return;
         if (item.isBought()) return;
         item.buyCosmetic(Player);
-        CosmeticImages[slot].gameObject.SetActive(false);
+        //CosmeticImages[slot].gameObject.SetActive(false);
     }
 
     List<int> GetUniqueRandomIndexes(int amount)

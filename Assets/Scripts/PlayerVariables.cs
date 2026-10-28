@@ -7,7 +7,8 @@ public class PlayerVariables : MonoBehaviour
     public int Energy = 0;
     public int QuestsCompleted = 0;
 
-    public Dictionary<string, int> Inventory = new Dictionary<string, int>();
+
+    public List<CosmeticItem> Inventory = new List<CosmeticItem>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -59,6 +60,19 @@ public class PlayerVariables : MonoBehaviour
     public void questRecinded()
     {
         QuestsCompleted--;
+    }
+
+    public void AddToInventory(CosmeticItem tempItem)
+    {
+        Inventory.Add(tempItem);
+    }
+
+    public void readInventory()
+    {
+        for (int i = 0; i < Inventory.Count; i++)
+        {
+            Debug.Log(Inventory[i].getName() + " : " + Inventory[i].getPrice() + " : " + Inventory[i].isBought());
+        }
     }
     
 }
