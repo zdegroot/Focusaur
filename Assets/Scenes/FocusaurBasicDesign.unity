@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 4558027}
   - component: {fileID: 4558026}
   m_Layer: 5
-  m_Name: ThirdCosmetic
+  m_Name: FourthCosmetic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,11 +147,11 @@ RectTransform:
   m_GameObject: {fileID: 4558024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 2, z: 1}
+  m_LocalScale: {x: 1.5000001, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 387267585}
-  m_Father: {fileID: 951491596}
+  m_Father: {fileID: 582100476}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -209,7 +209,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1459,7 +1459,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1527262379}
+  - {fileID: 4558025}
   - {fileID: 350988451}
   - {fileID: 873969163}
   m_Father: {fileID: 1534611087}
@@ -2685,7 +2685,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4558025}
+  - {fileID: 1527262379}
   - {fileID: 802594376}
   - {fileID: 1278652833}
   m_Father: {fileID: 1534611087}
@@ -3114,6 +3114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TaskListManager
   taskItemPrefab: {fileID: 8281349070379607686, guid: b7ebf629eaac9458eb77b439ffd1c355, type: 3}
   taskListContainer: {fileID: 1039947691}
+  Player: {fileID: 1534611090}
   presetTaskPool:
   - taskName: Complete daily review
     rewardCurrency: 50
@@ -4626,6 +4627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeeca5dacab6943c59e1c1cfdd93a648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::leavesTxtScript
+  Player: {fileID: 1534611090}
   CosmeticText: {fileID: 1441879943}
 --- !u!1 &1458948467
 GameObject:
@@ -5006,7 +5008,7 @@ GameObject:
   - component: {fileID: 1527262381}
   - component: {fileID: 1527262380}
   m_Layer: 5
-  m_Name: FourthCosmetic
+  m_Name: ThirdCosmetic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5021,11 +5023,11 @@ RectTransform:
   m_GameObject: {fileID: 1527262378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 2, z: 1}
+  m_LocalScale: {x: 1.5000001, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 65764617}
-  m_Father: {fileID: 582100476}
+  m_Father: {fileID: 951491596}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5083,7 +5085,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5140,6 +5142,7 @@ GameObject:
   - component: {fileID: 1534611084}
   - component: {fileID: 1534611088}
   - component: {fileID: 1534611089}
+  - component: {fileID: 1534611090}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5293,6 +5296,7 @@ MonoBehaviour:
   - {fileID: 350988452}
   - {fileID: 1861738327}
   - {fileID: 766143466}
+  Player: {fileID: 1534611090}
 --- !u!114 &1534611089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5305,14 +5309,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262039480f9fd485dbfbf245af244476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BuyingItems
+  Player: {fileID: 1534611090}
   buttonsUI:
   - {fileID: 2097778733}
   - {fileID: 1122609186}
-  - {fileID: 4558026}
   - {fileID: 1527262380}
+  - {fileID: 4558026}
   - {fileID: 2074971489}
   - {fileID: 774816439}
   cosmeticScript: {fileID: 1534611088}
+--- !u!114 &1534611090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534611083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a32e9c73992e4caf902d9b04e7b2ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerVariables
+  Leaves: 0
+  Energy: 0
+  QuestsCompleted: 0
 --- !u!1 &1548603835
 GameObject:
   m_ObjectHideFlags: 0
