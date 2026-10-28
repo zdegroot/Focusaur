@@ -2680,6 +2680,13 @@ MonoBehaviour:
   - {fileID: -1843197933104017171, guid: e78e201209062489ead609e11602eb34, type: 3}
   - {fileID: 9063164701530692409, guid: a5d4fe1bf04ee494ca5e2d8f2dcd36cc, type: 3}
   - {fileID: 2069420720813572178, guid: f2fd2cba4bc2f430f8d75b473c70a7fe, type: 3}
+  CosmeticText:
+  - {fileID: 1924046596}
+  - {fileID: 2091018563}
+  - {fileID: 802594377}
+  - {fileID: 350988452}
+  - {fileID: 1861738327}
+  - {fileID: 766143466}
 --- !u!1 &1548941325
 GameObject:
   m_ObjectHideFlags: 0
