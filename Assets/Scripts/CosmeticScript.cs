@@ -57,13 +57,9 @@ public class CosmeticScript : MonoBehaviour
     private List<int> shownIndexes = new List<int>();
     private int day;
     private int prevDay;
-	// didn't push
     [System.NonSerialized]
     public List<CosmeticItem> CosmeticItems;
 	void Awake(){
-		
-		Debug.Log("Sprites in The list: " + CosmeticSprites.Count, this);
-		
 		CosmeticItems = new List<CosmeticItem>
     	{
         	new CosmeticItem("Jungle Hat", CosmeticSprites[0], 20, false),
@@ -111,7 +107,13 @@ public class CosmeticScript : MonoBehaviour
 		    prevDay = day;
 	    }
     }
-
+    
+    public CosmeticItem GetItemInSlot(int slot)
+    {
+	    if (slot < 0 || slot >= shownIndexes.Count) return null;
+	    return CosmeticItems[shownIndexes[slot]];
+    }
+    
     public void RefreshShop()
     {
         shownIndexes = GetUniqueRandomIndexes(6);
