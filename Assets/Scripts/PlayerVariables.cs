@@ -36,7 +36,7 @@ public class PlayerVariables : MonoBehaviour
 
     public void removeLeaves(int numLeaves)
     {
-        if (numLeaves < Leaves)
+        if (numLeaves <= Leaves)
         {
             Leaves = Leaves - numLeaves;
         }
