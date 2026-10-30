@@ -895,7 +895,6 @@ GameObject:
   - component: {fileID: 193321478}
   - component: {fileID: 193321480}
   - component: {fileID: 193321479}
-  - component: {fileID: 193321481}
   m_Layer: 5
   m_Name: Cloud (5)
   m_TagString: Untagged
@@ -960,19 +959,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193321477}
   m_CullTransparentMesh: 1
---- !u!114 &193321481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193321477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f03c75ee73b4f14ca60262e0cba516d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
-  speed: 10
 --- !u!1 &227608288
 GameObject:
   m_ObjectHideFlags: 0
@@ -3263,7 +3249,6 @@ GameObject:
   - component: {fileID: 1042966810}
   - component: {fileID: 1042966812}
   - component: {fileID: 1042966811}
-  - component: {fileID: 1042966813}
   m_Layer: 5
   m_Name: Cloud (4)
   m_TagString: Untagged
@@ -3328,19 +3313,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042966809}
   m_CullTransparentMesh: 1
---- !u!114 &1042966813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1042966809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f03c75ee73b4f14ca60262e0cba516d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
-  speed: 20
 --- !u!1 &1049693354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3388,7 +3360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TaskListManager
   taskItemPrefab: {fileID: 8281349070379607686, guid: b7ebf629eaac9458eb77b439ffd1c355, type: 3}
   taskListContainer: {fileID: 1039947691}
-  Player: {fileID: 1534611090}
+  Player: {fileID: 0}
   presetTaskPool:
   - taskName: Complete daily review
     rewardCurrency: 50
@@ -4810,7 +4782,6 @@ GameObject:
   - component: {fileID: 1427686768}
   - component: {fileID: 1427686770}
   - component: {fileID: 1427686769}
-  - component: {fileID: 1427686771}
   m_Layer: 5
   m_Name: Cloud
   m_TagString: Untagged
@@ -4875,19 +4846,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427686767}
   m_CullTransparentMesh: 1
---- !u!114 &1427686771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427686767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f03c75ee73b4f14ca60262e0cba516d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
-  speed: 13
 --- !u!1 &1441879941
 GameObject:
   m_ObjectHideFlags: 0
@@ -6134,7 +6092,6 @@ GameObject:
   - component: {fileID: 1621670255}
   - component: {fileID: 1621670257}
   - component: {fileID: 1621670256}
-  - component: {fileID: 1621670258}
   m_Layer: 5
   m_Name: Cloud (2)
   m_TagString: Untagged
@@ -6199,19 +6156,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621670254}
   m_CullTransparentMesh: 1
---- !u!114 &1621670258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1621670254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f03c75ee73b4f14ca60262e0cba516d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
-  speed: 19
 --- !u!1 &1631854765
 GameObject:
   m_ObjectHideFlags: 0
@@ -6756,7 +6700,6 @@ GameObject:
   - component: {fileID: 1885237700}
   - component: {fileID: 1885237702}
   - component: {fileID: 1885237701}
-  - component: {fileID: 1885237703}
   m_Layer: 5
   m_Name: Cloud (1)
   m_TagString: Untagged
@@ -6821,19 +6764,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885237699}
   m_CullTransparentMesh: 1
---- !u!114 &1885237703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885237699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f03c75ee73b4f14ca60262e0cba516d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
-  speed: 18
 --- !u!1 &1894256053
 GameObject:
   m_ObjectHideFlags: 0
@@ -7199,7 +7129,6 @@ GameObject:
   - component: {fileID: 1964471739}
   - component: {fileID: 1964471741}
   - component: {fileID: 1964471740}
-  - component: {fileID: 1964471742}
   m_Layer: 5
   m_Name: Cloud (3)
   m_TagString: Untagged
@@ -7264,19 +7193,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964471738}
   m_CullTransparentMesh: 1
---- !u!114 &1964471742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964471738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f03c75ee73b4f14ca60262e0cba516d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
-  speed: 20
 --- !u!1 &2074971487
 GameObject:
   m_ObjectHideFlags: 0
