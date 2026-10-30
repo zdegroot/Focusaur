@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 816d18f25b0c74d5383abafa69dc850e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - taskInputField: {instanceID: 0}
+  - taskItemPrefab: {fileID: 8281349070379607686, guid: b7ebf629eaac9458eb77b439ffd1c355, type: 3}
+  - taskListContainer: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
