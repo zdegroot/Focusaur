@@ -8,7 +8,7 @@ public class TaskListManager : MonoBehaviour
     [Header("UI References")]
     [SerializeField] private GameObject taskItemPrefab;
     [SerializeField] private Transform taskListContainer;
-    [SerializeField] private PlayerVariables Player;
+    [SerializeField] private PlayerVariables Playser;
     [Header("Preset Task Data Pool")]
     [SerializeField] private List<TaskData> presetTaskPool = new List<TaskData>
     {

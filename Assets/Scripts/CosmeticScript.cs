@@ -137,20 +137,7 @@ public class CosmeticScript : MonoBehaviour
 			}
         }
     }
-
-    // Hook to each slot's button OnClick, passing the slot number 0-5
-    /*
-    public bool BuySlot(int slot)
-    {
-        if (slot >= shownIndexes.Count) return false;
-        CosmeticItem item = CosmeticItems[shownIndexes[slot]];
-        if (item.Price > Player.getLeaves()) return false;
-        if (item.isBought()) return false;
-        item.buyCosmetic(Player);
-        return true;
-        //CosmeticImages[slot].gameObject.SetActive(false);
-    }
-    */
+    
     public bool TryBuySlot(int slot)
     {
 	    if (slot < 0 || slot >= shownIndexes.Count) return false;
