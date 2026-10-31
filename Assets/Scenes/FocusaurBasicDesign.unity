@@ -3360,7 +3360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TaskListManager
   taskItemPrefab: {fileID: 8281349070379607686, guid: b7ebf629eaac9458eb77b439ffd1c355, type: 3}
   taskListContainer: {fileID: 1039947691}
-  Player: {fileID: 0}
+  Player: {fileID: 1534611090}
   presetTaskPool:
   - taskName: Complete daily review
     rewardCurrency: 50
