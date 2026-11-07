@@ -31,7 +31,7 @@ public class BuyingItems : MonoBehaviour
     {
         TMP_Text label = buttonsUI[index].GetComponentInChildren<TMP_Text>();
         label.text = "Collected";
-        buttonsUI[index].image.color = Color.red;
+        buttonsUI[index].image.color = Color.forestGreen;
     }
 
 }
